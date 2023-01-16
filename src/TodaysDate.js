@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 
 
 
 const TodaysDate = () => {
-    const [data, setData] = useState(0)
+    const [data, setData] = useState('asdasdasdasd')
 
-    return <div>{`Today's date is ${Date()}`}</div>
+    return <div>{data}{`'s date is ${Date()}`}</div>
 };
 
 export default TodaysDate;
