@@ -1,11 +1,17 @@
 import React, {useState} from "react";
 
+function TodaysDate() {
+    // Declare a new state variable, which we'll call "count"
+    const [count, setCount] = useState(0);
 
+    return (
+        <div>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}>
+                Click me
+            </button>
+        </div>
+    );
+}
 
-const TodaysDate = () => {
-    const [data, setData] = useState('asdasdasdasd')
-
-    return <div>{data}{`'s date is ${Date()}`}</div>
-};
-
-export default TodaysDate;
+export default TodaysDate
